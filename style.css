@@ -265,8 +265,12 @@ a{
   align-items:flex-end;
   padding:35px;
   transition:0.4s ease;
+}
+
+.activity-card:hover{
   transform:translateY(-8px);
 }
+
 
 .activity-overlay{
   position:absolute;
