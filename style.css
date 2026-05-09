@@ -197,6 +197,7 @@ a{
   gap:25px;
 }
 
+
 .rooms-grid{
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 }
@@ -209,15 +210,31 @@ a{
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 }
 
+.gallery-grid img{
+  height:400px;
+  object-fit:cover;
+  border-radius:22px;
+  transition:0.5s ease;
+  cursor:pointer;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.04);
+}
+
 .reviews-grid{
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 }
 
-.room-card,
-.review-card{
+.room-card{
   background:#171717;
   border-radius:24px;
   overflow:hidden;
+  transition:0.4s ease;
+}
+
+.room-card:hover{
+  transform:translateY(-10px);
 }
 
 .room-content,
@@ -225,10 +242,18 @@ a{
   padding:35px;
 }
 
-.room-image img,
-.gallery-grid img{
+.room-image{
+  overflow:hidden;
+}
+
+.room-image img{
   height:320px;
   object-fit:cover;
+  transition:0.5s ease;
+}
+
+.room-card:hover .room-image img{
+  transform:scale(1.08);
 }
 
 .activity-card{
@@ -239,6 +264,8 @@ a{
   display:flex;
   align-items:flex-end;
   padding:35px;
+  transition:0.4s ease;
+  transform:translateY(-8px);
 }
 
 .activity-overlay{
