@@ -365,11 +365,13 @@ footer{
 }
 
 @media(max-width:768px){
+
   .nav-links{
     display:none;
-    .logo img{
-  height:50px;
-}
+  }
+
+  .logo img{
+    height:50px;
   }
 
   .hero h1,
@@ -379,6 +381,7 @@ footer{
   .experience-content h2{
     font-size:2.5rem;
   }
+
 }
 .whatsapp-float{
   position:fixed;
