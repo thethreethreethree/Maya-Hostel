@@ -45,11 +45,10 @@ a{
   backdrop-filter:blur(14px);
 }
 
-.logo{
-  font-size:1.3rem;
-  font-family:'Poppins',sans-serif;
-  font-weight:700;
-  letter-spacing:2px;
+.logo img{
+  height:55px;
+  width:auto;
+  display:block;
 }
 
 .nav-links{
@@ -431,3 +430,4 @@ footer{
   width:34px;
   height:34px;
 }
+
