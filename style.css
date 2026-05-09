@@ -401,3 +401,33 @@ footer{
   width:34px;
   height:34px;
 }
+.instagram-float{
+  position:fixed;
+  width:65px;
+  height:65px;
+  bottom:110px;
+  right:30px;
+  background:linear-gradient(
+    45deg,
+    #F58529,
+    #DD2A7B,
+    #8134AF,
+    #515BD4
+  );
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  z-index:9999;
+  transition:0.3s ease;
+}
+
+.instagram-float:hover{
+  transform:scale(1.1);
+}
+
+.instagram-float img{
+  width:34px;
+  height:34px;
+}
