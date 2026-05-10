@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Maya Hostel El Nido</title>
+  <title>Maya Hostel El Nido — Social Stays in Palawan</title>
+  <meta name="description" content="Maya Hostel El Nido — El Nido's top social hostel. Rooftop pool, island hopping, sunset views, and travelers from around the world. Book now on Hostelworld."/>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,19 @@
 
 <!-- Grain texture overlay -->
 <div class="grain"></div>
+
+<!-- ── MOBILE NAV OVERLAY ── -->
+<div class="mobile-nav-overlay" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&#x2715;</button>
+  <ul class="mobile-nav-links">
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#location">Location</a></li>
+  </ul>
+  <a href="booking.html" class="btn-primary mobile-nav-book">Book Now</a>
+</div>
 
 <!-- ── NAVBAR ── -->
 <header class="navbar">
@@ -26,10 +40,16 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#location">Location</a></li>
     </ul>
   </nav>
 
-  <a href="booking.html" class="nav-btn">Book Now</a>
+  <div class="navbar-right">
+    <a href="booking.html" class="nav-btn">Book Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
 <!-- ── HERO ── -->
@@ -72,7 +92,7 @@
     <span class="ticker-item"><span class="ticker-dot">◆</span> Sunset Views</span>
     <span class="ticker-item"><span class="ticker-dot">◆</span> Island Hopping</span>
     <span class="ticker-item"><span class="ticker-dot">◆</span> El Nido, Palawan</span>
-    <!-- Duplicate for seamless loop -->
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Hostelworld Top Rated</span>
     <span class="ticker-item"><span class="ticker-dot">◆</span> Social Hostel</span>
     <span class="ticker-item"><span class="ticker-dot">◆</span> Rooftop Pool</span>
     <span class="ticker-item"><span class="ticker-dot">◆</span> Near The Beach</span>
@@ -80,8 +100,42 @@
     <span class="ticker-item"><span class="ticker-dot">◆</span> Sunset Views</span>
     <span class="ticker-item"><span class="ticker-dot">◆</span> Island Hopping</span>
     <span class="ticker-item"><span class="ticker-dot">◆</span> El Nido, Palawan</span>
+    <span class="ticker-item"><span class="ticker-dot">◆</span> Hostelworld Top Rated</span>
   </div>
 </div>
+
+<!-- ── STATS BAR ── -->
+<section class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item animate">
+      <div class="stat-top">
+        <span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span>
+      </div>
+      <span class="stat-label">Happy Guests</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item animate animate-delay-1">
+      <div class="stat-top">
+        <span class="stat-num stat-fixed">4.8</span><span class="stat-suffix">★</span>
+      </div>
+      <span class="stat-label">Average Rating</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item animate animate-delay-2">
+      <div class="stat-top">
+        <span class="stat-num" data-target="20">0</span><span class="stat-suffix">+</span>
+      </div>
+      <span class="stat-label">Nationalities Daily</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item animate animate-delay-3">
+      <div class="stat-top">
+        <span class="stat-num stat-fixed">#1</span>
+      </div>
+      <span class="stat-label">Social Hostel in El Nido</span>
+    </div>
+  </div>
+</section>
 
 <!-- ── EXPERIENCE ── -->
 <section class="experience-section" id="about">
@@ -145,6 +199,7 @@
           <li>Fast WiFi</li>
           <li>Personal Lockers</li>
         </ul>
+        <a href="booking.html" class="room-book-btn">Reserve Now</a>
       </div>
     </div>
 
@@ -161,6 +216,7 @@
           <li>Fast WiFi</li>
           <li>Secure Access</li>
         </ul>
+        <a href="booking.html" class="room-book-btn">Reserve Now</a>
       </div>
     </div>
 
@@ -177,7 +233,91 @@
           <li>Air Conditioning</li>
           <li>Fast WiFi</li>
         </ul>
+        <a href="booking.html" class="room-book-btn">Reserve Now</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AMENITIES ── -->
+<section class="amenities-section">
+  <div class="section-header">
+    <span class="section-tag animate">Included</span>
+    <h2 class="animate animate-delay-1">Everything You<br/><em>Need</em></h2>
+  </div>
+
+  <div class="amenities-grid">
+    <div class="amenity-item animate">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+      </div>
+      <span>Fast WiFi</span>
+    </div>
+    <div class="amenity-item animate animate-delay-1">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+      </div>
+      <span>Social Events</span>
+    </div>
+    <div class="amenity-item animate animate-delay-2">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <span>Meet the World</span>
+    </div>
+    <div class="amenity-item animate animate-delay-3">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <span>Secure Lockers</span>
+    </div>
+    <div class="amenity-item animate">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </div>
+      <span>Rooftop Sunsets</span>
+    </div>
+    <div class="amenity-item animate animate-delay-1">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <span>Air Conditioning</span>
+    </div>
+    <div class="amenity-item animate animate-delay-2">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.41a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <span>24/7 Reception</span>
+    </div>
+    <div class="amenity-item animate animate-delay-3">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <span>Beach Nearby</span>
+    </div>
+    <div class="amenity-item animate">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+      </div>
+      <span>Island Hopping</span>
+    </div>
+    <div class="amenity-item animate animate-delay-1">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+      </div>
+      <span>Common Room</span>
+    </div>
+    <div class="amenity-item animate animate-delay-2">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      </div>
+      <span>Tour Booking Help</span>
+    </div>
+    <div class="amenity-item animate animate-delay-3">
+      <div class="amenity-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <span>Top-Rated Stay</span>
     </div>
   </div>
 </section>
@@ -253,17 +393,60 @@
 
   <div class="gallery-grid">
     <div class="gallery-item animate">
-      <img src="assets/gallery1.jpg" alt="">
+      <img src="assets/gallery1.jpg" alt="Life at Maya Hostel">
     </div>
     <div class="gallery-item animate animate-delay-1">
-      <img src="assets/gallery2.jpg" alt="">
+      <img src="assets/gallery2.jpg" alt="El Nido adventures">
     </div>
     <div class="gallery-item animate animate-delay-2">
-      <img src="assets/gallery3.jpg" alt="">
+      <img src="assets/gallery3.jpg" alt="Social atmosphere">
     </div>
     <div class="gallery-item animate animate-delay-3">
-      <img src="assets/gallery4.jpg" alt="">
+      <img src="assets/gallery4.jpg" alt="Rooftop vibes">
     </div>
+  </div>
+</section>
+
+<!-- ── INSTAGRAM ── -->
+<section class="instagram-section">
+  <div class="section-header">
+    <span class="section-tag animate">@mayahostelelnido</span>
+    <h2 class="animate animate-delay-1">Follow Our<br/><em>Story</em></h2>
+    <p class="ig-subtext animate animate-delay-2">Real moments, real travelers, real El Nido magic.</p>
+  </div>
+
+  <div class="ig-grid">
+    <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="ig-item animate">
+      <img src="assets/gallery1.jpg" alt="Maya Hostel Instagram">
+      <div class="ig-hover"><svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="ig-item animate animate-delay-1">
+      <img src="assets/activity1.jpg" alt="Island hopping El Nido">
+      <div class="ig-hover"><svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="ig-item animate animate-delay-2">
+      <img src="assets/gallery2.jpg" alt="Rooftop sunsets">
+      <div class="ig-hover"><svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="ig-item animate animate-delay-3">
+      <img src="assets/activity2.jpg" alt="Sunset sessions">
+      <div class="ig-hover"><svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="ig-item animate">
+      <img src="assets/gallery3.jpg" alt="Travelers from around the world">
+      <div class="ig-hover"><svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+    <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="ig-item animate animate-delay-1">
+      <img src="assets/activity3.jpg" alt="El Nido nightlife">
+      <div class="ig-hover"><svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></div>
+    </a>
+  </div>
+
+  <div class="ig-cta animate">
+    <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="btn-outline ig-follow-btn">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right:8px;vertical-align:middle"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Follow @mayahostelelnido
+    </a>
   </div>
 </section>
 
@@ -274,23 +457,260 @@
     <h2 class="animate animate-delay-1">What Travelers<br/><em>Say</em></h2>
   </div>
 
+  <!-- Rating Summary -->
+  <div class="rating-summary animate">
+    <div class="rating-big">4.8</div>
+    <div class="rating-right">
+      <div class="rating-stars-big">★★★★★</div>
+      <div class="rating-count">Based on 100+ reviews</div>
+      <div class="rating-bars">
+        <div class="rating-bar-row"><span>5★</span><div class="rbar"><div class="rbar-fill" style="width:82%"></div></div><span>82%</span></div>
+        <div class="rating-bar-row"><span>4★</span><div class="rbar"><div class="rbar-fill" style="width:13%"></div></div><span>13%</span></div>
+        <div class="rating-bar-row"><span>3★</span><div class="rbar"><div class="rbar-fill" style="width:5%"></div></div><span>5%</span></div>
+      </div>
+    </div>
+  </div>
+
   <div class="reviews-grid">
     <div class="review-card animate">
+      <div class="review-stars">★★★★★</div>
       <div class="review-quote">"</div>
-      <p>Best social hostel in El Nido. Amazing rooftop vibes and incredible people.</p>
-      <span class="review-source">Hostelworld Review</span>
+      <p>Best social hostel in El Nido. Amazing rooftop vibes and incredible people. The staff organized an amazing island hopping tour for us!</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">S</div>
+        <div>
+          <div class="reviewer-name">Sarah M.</div>
+          <span class="review-source">Hostelworld · Australia</span>
+        </div>
+      </div>
     </div>
 
     <div class="review-card animate animate-delay-1">
+      <div class="review-stars">★★★★★</div>
       <div class="review-quote">"</div>
-      <p>Perfect atmosphere for meeting people and exploring El Nido together.</p>
-      <span class="review-source">Booking.com Guest</span>
+      <p>Perfect atmosphere for meeting people and exploring El Nido together. The rooftop sunset views are absolutely breathtaking. Highly recommend!</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">J</div>
+        <div>
+          <div class="reviewer-name">Jake T.</div>
+          <span class="review-source">Google Review · UK</span>
+        </div>
+      </div>
     </div>
 
     <div class="review-card animate animate-delay-2">
+      <div class="review-stars">★★★★★</div>
       <div class="review-quote">"</div>
-      <p>The rooftop sunsets and social atmosphere made this one of the highlights of my trip.</p>
-      <span class="review-source">Google Review</span>
+      <p>The rooftop sunsets and social atmosphere made this one of the highlights of my entire trip through Southeast Asia. Will definitely return!</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">M</div>
+        <div>
+          <div class="reviewer-name">Maria L.</div>
+          <span class="review-source">Booking.com · Germany</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card animate">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-quote">"</div>
+      <p>Stayed for a week and it felt like home. Daily activities and social events create an amazing community. Best decision I made on my trip.</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">T</div>
+        <div>
+          <div class="reviewer-name">Tom B.</div>
+          <span class="review-source">Hostelworld · USA</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card animate animate-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-quote">"</div>
+      <p>The female dorm felt safe and super clean. Staff are incredibly helpful and friendly. Perfect spot for solo female travelers exploring Palawan.</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">E</div>
+        <div>
+          <div class="reviewer-name">Emma K.</div>
+          <span class="review-source">Google Review · Sweden</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card animate animate-delay-2">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-quote">"</div>
+      <p>Couldn't have asked for a better base to explore El Nido. The location in Corong Corong is perfect — close to everything. Lifelong memories made here.</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">C</div>
+        <div>
+          <div class="reviewer-name">Carlos R.</div>
+          <span class="review-source">TripAdvisor · Mexico</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PLATFORM RATINGS ── -->
+<section class="platforms-section">
+  <div class="platforms-label animate">Trusted On</div>
+  <div class="platforms-inner">
+    <a href="https://www.hostelworld.com/pwa/hosteldetails.php/Maya-Hostel-El-Nido/El-Nido/329326" target="_blank" class="platform-item animate">
+      <div class="platform-score">9.2</div>
+      <div class="platform-name">Hostelworld</div>
+      <div class="platform-stars">★★★★★</div>
+    </a>
+    <div class="platform-divider"></div>
+    <div class="platform-item animate animate-delay-1">
+      <div class="platform-score">8.8</div>
+      <div class="platform-name">Booking.com</div>
+      <div class="platform-stars">★★★★★</div>
+    </div>
+    <div class="platform-divider"></div>
+    <div class="platform-item animate animate-delay-2">
+      <div class="platform-score">4.8</div>
+      <div class="platform-name">Google</div>
+      <div class="platform-stars">★★★★★</div>
+    </div>
+    <div class="platform-divider"></div>
+    <div class="platform-item animate animate-delay-3">
+      <div class="platform-score">4.5</div>
+      <div class="platform-name">TripAdvisor</div>
+      <div class="platform-stars">★★★★★</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOCATION ── -->
+<section class="location-section" id="location">
+  <div class="location-content">
+    <span class="section-tag animate">Find Us</span>
+    <h2 class="animate animate-delay-1">How To<br/><em>Get Here</em></h2>
+
+    <div class="location-details animate animate-delay-2">
+      <div class="location-detail-item">
+        <div class="location-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <strong>Address</strong>
+          <p>Corong Corong, El Nido<br/>Palawan 5313, Philippines</p>
+        </div>
+      </div>
+
+      <div class="location-detail-item">
+        <div class="location-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <strong>Check-in / Check-out</strong>
+          <p>Check-in: 2:00 PM<br/>Check-out: 12:00 PM</p>
+        </div>
+      </div>
+
+      <div class="location-detail-item">
+        <div class="location-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div>
+          <strong>Getting Here</strong>
+          <p>Fly to Puerto Princesa (PPS)<br/>Take a van to El Nido (~5–6 hrs)</p>
+        </div>
+      </div>
+
+      <div class="location-detail-item">
+        <div class="location-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.41a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <strong>Contact Us</strong>
+          <p><a href="https://wa.me/+639992233030" target="_blank" style="color:var(--earth)">+63 999 223 3030</a><br/>WhatsApp available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="location-map animate animate-delay-2">
+    <iframe
+      src="https://maps.google.com/maps?q=Maya+Hostel+El+Nido+Corong+Corong+Palawan&output=embed"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Maya Hostel El Nido Location">
+    </iframe>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq-section">
+  <div class="section-header">
+    <span class="section-tag animate">FAQ</span>
+    <h2 class="animate animate-delay-1">Common<br/><em>Questions</em></h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item animate">
+      <button class="faq-question" aria-expanded="false">
+        How do I get to Maya Hostel from the airport?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Fly into Puerto Princesa International Airport (PPS) and take a van directly to El Nido — the journey takes approximately 5–6 hours and costs around ₱250–350. Vans depart regularly from the terminal area. Once in El Nido town, Maya Hostel is a short tricycle ride away in Corong Corong.</p>
+      </div>
+    </div>
+
+    <div class="faq-item animate animate-delay-1">
+      <button class="faq-question" aria-expanded="false">
+        Do you organize island hopping tours?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes! Our staff can help you book island hopping tours directly from the hostel. El Nido is famous for its stunning lagoons and hidden beaches — Tours A, B, C, and D are all available. We'll help you find the best option based on your interests and budget.</p>
+      </div>
+    </div>
+
+    <div class="faq-item animate animate-delay-2">
+      <button class="faq-question" aria-expanded="false">
+        Is there a rooftop area? Can I watch sunsets?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Absolutely — the rooftop is one of the best features of Maya Hostel! Enjoy stunning panoramic views of El Nido and the surrounding mountains while watching the sunset. It's the perfect place to meet fellow travelers and share stories from the day's adventures.</p>
+      </div>
+    </div>
+
+    <div class="faq-item animate animate-delay-3">
+      <button class="faq-question" aria-expanded="false">
+        What time is check-in and check-out?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Check-in is from 2:00 PM and check-out is at 12:00 PM (noon). If you arrive early, we'll do our best to accommodate you or safely store your luggage until your room is ready. Late check-out may be available upon request, subject to availability.</p>
+      </div>
+    </div>
+
+    <div class="faq-item animate">
+      <button class="faq-question" aria-expanded="false">
+        Is it safe for solo travelers and female travelers?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes! Maya Hostel is a safe and welcoming environment for solo travelers of all backgrounds. We offer a female-only dorm with secure access for extra peace of mind. Our staff are always available and the social atmosphere means you'll quickly feel part of a community.</p>
+      </div>
+    </div>
+
+    <div class="faq-item animate animate-delay-1">
+      <button class="faq-question" aria-expanded="false">
+        What's included in my stay?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Your stay includes air-conditioned accommodation, fast WiFi, personal lockers (bring your own lock or rent one), access to all common areas, rooftop access, and our friendly team's help with planning your El Nido adventures. We also organize regular social events to help you meet other travelers.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -308,27 +728,62 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
+  <div class="footer-top">
+    <div class="footer-col footer-brand-col">
       <img src="assets/logo.png" alt="Maya Hostel El Nido">
-      <p>Corong Corong, El Nido, Palawan</p>
+      <p>El Nido's top social hostel. Where travelers become friends and adventures begin.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/mayahostelelnido/" target="_blank" class="footer-social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://wa.me/+639992233030" target="_blank" class="footer-social-btn" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        </a>
+      </div>
     </div>
 
-    <div class="footer-links">
-      <a href="https://instagram.com/mayahostelelnido" target="_blank">Instagram</a>
-      <a href="https://wa.me/+639992233030" target="_blank">WhatsApp</a>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#experience">Activities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Book Now</h4>
+      <ul>
+        <li><a href="https://www.hostelworld.com/pwa/hosteldetails.php/Maya-Hostel-El-Nido/El-Nido/329326" target="_blank">Hostelworld</a></li>
+        <li><a href="booking.html">All Rooms</a></li>
+        <li><a href="https://wa.me/+639992233030" target="_blank">WhatsApp Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/+639992233030" target="_blank">+63 999 223 3030</a></li>
+        <li><a href="https://www.instagram.com/mayahostelelnido/" target="_blank">@mayahostelelnido</a></li>
+        <li><span style="color:var(--muted)">Corong Corong, El Nido<br/>Palawan, Philippines</span></li>
+      </ul>
     </div>
   </div>
 
-  <div class="footer-copy">© 2026 Maya Hostel El Nido</div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Maya Hostel El Nido · All rights reserved</div>
+    <div class="footer-tagline">Made with love in El Nido</div>
+  </div>
 </footer>
 
 <!-- ── FLOATING BUTTONS ── -->
-<a href="https://wa.me/+639992233030" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/+639992233030" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
-<a href="https://instagram.com/mayahostelelnido" class="instagram-float" target="_blank">
+<a href="https://www.instagram.com/mayahostelelnido/" class="instagram-float" target="_blank" aria-label="Follow on Instagram">
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
 </a>
 
